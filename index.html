@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divs{
+            background: red;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="divs"><p>1</p></div>
+<div class="divs">2</div>
+<div class="divs">3</div>
+<div class="divs">4</div>
+<div class="divs">5</div>
+    <script>
+/*
+ CREATING A LITERAL OBJECT EXAMPLE IN REAL LIFE
+var laptop = {
+color:"silver",
+brand:"HP",
+playSound:function(){
+    console.log("tan ran ran!")
+}
+};
+console.log(laptop)
+console.log(laptop)
+ CREATING A FUNCTIONAL OBJECT
+        function mrJames(nameV,colorV){
+            this.name = nameV
+            this.color = colorV
+            this.about = function(){
+                console.log(this.name+"\n"+this.color)
+            }
+        }
+
+        console.log(new mrJames("Mr James","Gold"))
+        console.log(new mrJames("Mr Austin","Gold"))
+ CREATING A FUNCTIONAL OBJECT EXAMPLE IN REAL LIFE
+
+var a = [20,50,60,70,80] //size
+var b = [100,500,600,700,800] //speed
+var c = [500,1000,6000,3400,400] //energy
+var d = ['red','green','black','orange','pink'] //energy
+
+function ball(size,speed,energy,color){
+    this.size = size
+    this.speed = speed
+    this.energy = energy
+    this.color = color
+}
+
+ 
+setInterval(function(){
+    var ba  = new ball(a[randomValue(0,4)],b[randomValue(0,4)],c[randomValue(0,4)],d[randomValue(0,4)]);
+var ballDiv = `<div style="width:${ba.size}px;height:${ba.size}px;background:${ba.color};border-radius:50%">${ba.energy}</div>`;
+document.body.innerHTML = ballDiv + document.body.innerHTML;
+},500)
+function randomValue(f,t){
+    return Math.floor(Math.random() * t) + f;
+}
+*/
+//console.log(createBall())
+
+   
+ /*
+    LOOPING THROGH AN ARRAY OR OBJECT ALSO KNOWN AS iterable
+ var data = [1,2,3,4]
+   var limit = data.length;
+   while(limit > 0){
+    limit = limit - 1;
+    console.log(data[limit]);
+   }
+   */
+  var dodo = document.getElementsByClassName("divs");
+  console.log(dodo) 
+   for(let i = 0;i < dodo.length;i++){
+console.log()
+   }
+   </script>
+</body>
+</html>
